@@ -366,6 +366,7 @@ func dockerComposeToKomposeMapping(composeObject *types.Config) (kobject.Kompose
 		serviceConfig.Dockerfile = composeServiceConfig.Build.Dockerfile
 		serviceConfig.BuildArgs = composeServiceConfig.Build.Args
 		serviceConfig.BuildLabels = composeServiceConfig.Build.Labels
+		serviceConfig.BuildTarget = composeServiceConfig.Build.Target
 
 		// env
 		parseV3Environment(&composeServiceConfig, &serviceConfig)

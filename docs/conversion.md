@@ -20,6 +20,7 @@ __Glossary:__
 | build: dockerfile      | ✓  | ✓  | ✓  |                                                             |                                                                                                                |
 | build: args            | n  | n  | n  |                                                             |                                                                                                                |
 | build: cache_from      | -  | -  | n  |                                                             |                                                                                                                |
+| build: target          | -  | -  | ✓  |                                                             |                                                                                                                |
 | cap_add, cap_drop      | ✓  | ✓  | ✓  | Pod.Spec.Container.SecurityContext.Capabilities.Add/Drop    |                                                                                                                |
 | command                | ✓  | ✓  | ✓  | Pod.Spec.Container.Args                                  |                                                                                                                |
 | configs                | n  | n  | ✓  |                                                             |                                                                                                                |

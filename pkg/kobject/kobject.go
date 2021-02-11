@@ -121,6 +121,7 @@ type ServiceConfig struct {
 	ExposeService     string              `compose:"kompose.service.expose"`
 	ExposeServicePath string              `compose:"kompose.service.expose.path"`
 	BuildLabels       map[string]string   `compose:"build-labels"`
+	BuildTarget       string              `compose:"build-target"`
 	ExposeServiceTLS  string              `compose:"kompose.service.expose.tls-secret"`
 	ImagePullSecret   string              `compose:"kompose.image-pull-secret"`
 	Stdin             bool                `compose:"stdin_open"`
